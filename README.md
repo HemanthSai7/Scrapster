@@ -43,7 +43,3 @@ pip install -r requirements.txt
   python main.py
 ```
 
-
-## **Feedback**
-The baseline script is written by [arjun-ms](https://github.com/arjun-ms/Scrapster). This repository contains my version of the script with some modifications to suit my needs. 
-
