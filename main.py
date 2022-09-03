@@ -28,10 +28,10 @@ def make_new_dir(query):
 
 def get_images_from_google():
     
-    query = 'car'
+    query = 'solar panels'
     driver.get('https://images.google.com/')
 
-    search_box = driver.find_element(By.XPATH,'//*[@id="sbtc"]/div/div[2]/input')
+    search_box = driver.find_element(By.XPATH,'//input[contains(@title,"Search")]')
     search_box.send_keys(query)
     search_box.send_keys(Keys.ENTER)
 
@@ -76,14 +76,15 @@ if __name__ == "__main__":
     import time
     import shutil
     
-    PATH = "D:/webdrivers/chromedriver"
+    PATH = "D:/webdrivers/chromedriver.exe"
     LIMIT = 2000
     NO_OF_TIMES = 5
     START_INDEX = 0
 
     options = Options()
     # options.binary_location = r"D:\webdrivers\chromedriver"
-    driver = webdriver.Chrome(service=Service(PATH))
+    options.page_load_strategy = 'normal'
+    driver = webdriver.Chrome(options=options,service=Service(PATH))
     
     print("Starting....")
 
