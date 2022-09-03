@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## **Edit your desired parameters in main.py**
 > On Linux
 ```bash
-  PATH = "/home/ams/chromedriver.exe"   # path to chromedriver
+  PATH = "/home/ams/chromedriver"   # path to chromedriver
   LIMIT = 100                       # how much images you want to download
   query = "solar panels"              # keyword you want to search for
 ```
