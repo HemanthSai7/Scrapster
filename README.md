@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="logo.png" />
+  <img src="assets/logo.png" />
 </p>
 &nbsp;
 

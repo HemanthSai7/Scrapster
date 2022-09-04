@@ -9,7 +9,7 @@ def scroll_to_bottom(nooftimes):
     # when internet is slow uncomment the code block below
     try:
         # click on the show more button
-        driver.find_element(By.XPATH,'//*[@id="islmp"]/div/div/div/div[1]/div[2]/div[2]/input').click()
+        driver.find_element(By.XPATH,'//input[contains(@value,"Show more results")]').click()
         time.sleep(5)       
     except:
         print("No more results button")
@@ -28,7 +28,7 @@ def make_new_dir(query):
 
 def get_images_from_google():
     
-    query = 'solar panels'
+    query = 'dusty solar panels'
     driver.get('https://images.google.com/')
 
     search_box = driver.find_element(By.XPATH,'//input[contains(@title,"Search")]')
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     import shutil
     
     PATH = "D:/webdrivers/chromedriver.exe"
-    LIMIT = 2000
+    LIMIT = 100
     NO_OF_TIMES = 5
     START_INDEX = 0
 
