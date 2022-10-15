@@ -28,7 +28,7 @@ def make_new_dir(query):
 
 def get_images_from_google():
     
-    query = 'dusty solar panels'
+    query = 'solar panels'
     driver.get('https://images.google.com/')
 
     search_box = driver.find_element(By.XPATH,'//input[contains(@title,"Search")]')
